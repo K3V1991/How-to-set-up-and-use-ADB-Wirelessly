@@ -11,6 +11,17 @@ If you prefer, you can switch over to TCP/IP Mode and connect ADB via WiFi inste
 * [Platform-Tools](https://developer.android.com/studio/releases/platform-tools) or [ADB & Fastboot++](https://github.com/K3V1991/ADB-and-FastbootPlusPlus)
 * [Termux](https://play.google.com/store/apps/details?id=com.termux) or [Terminal Emulator for Android](https://play.google.com/store/apps/details?id=jackpal.androidterm)
 
+## If you don't know your Device's IP you can:
+<details>
+  <summary>Click to expand</summary>
+* Check the IP in the WiFi Settings of your Device
+* Use ADB to discover IP (via USB):
+1. Connect the device to the computer via USB
+2. In a Command Line, type: 
+```adb shell ifconfig``` 
+and copy your Device's IP Address
+</details>
+
 ## Non-rooted Device:
 **Note: Make sure your Device and your Computer are on the same Network**
 
@@ -22,7 +33,7 @@ adb tcpip <port>
 Switches to TCP/IP Mode
 
 3. Disconnect the USB Cable from the Device
-4. Type: adb connect <ip address>:<port>
+4. Type: adb connect ```<ip address>:<port>```
 
 ## Example:
 ```
@@ -32,19 +43,10 @@ adb tcpip 5555
 adb connect 192.168.0.101:5555
 ```
 
-## If you don't know your Device's IP you can:
-* Check the IP in the WiFi Settings of your Device
-* Use ADB to discover IP (via USB):
-1. Connect the device to the computer via USB
-2. In a Command Line, type: 
-```adb shell ifconfig``` 
-and copy your Device's IP Address
-
-## To revert back to Debugging use the following Command:
+## Revert back to USB Debugging use the following Command:
 ```
 adb usb
 ```
-<br />
 <br />
 
 ## Rooted Device:
