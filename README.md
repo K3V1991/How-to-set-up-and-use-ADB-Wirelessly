@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.ibb.co/qm9m4Pt/Wireless.png" width="200"></a>
+<p align="center"><img src="https://github.com/K3V1991/How-to-set-up-and-use-ADB-Wirelessly/blob/main/Wireless.png" width="200"></a>
 <h1 align="center"><b>How to set up and use ADB Wirelessly</b></h1>
 <br />
 
